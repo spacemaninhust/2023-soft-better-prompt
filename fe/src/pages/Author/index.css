@@ -1,0 +1,119 @@
+.col-lg-4{
+    flex: 0 0 auto;
+    width: 25%;
+}
+.rows{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.address{
+    margin: auto;
+    margin-left: 50%;
+}
+.author-icon{
+    width: 100%;
+    border-radius: 50%;
+}
+.author-icon:hover{
+    transform: scale(1.1);
+}
+.author-head{
+    text-align: center;
+    padding-top: 2%;
+    color: #FFFFFF;
+    animation: slideInBottom .8s ease-in-out both;
+}
+@keyframes slideInBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.author-item{
+    margin-top:4%;
+    display: flex;
+}
+.first>.intro-img{
+    animation: slideInLeft 1s ease-in-out both;
+}
+.first>.intro-text{
+    animation: slideInRight 1s ease-in-out both;
+}
+.intro-img{
+    opacity: 0; /* 初始设置为透明，隐藏元素 */
+    width: 55%;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+.intro-text{
+    opacity: 0; /* 初始设置为透明，隐藏元素 */
+    margin-left: 5%;
+}
+.intro-text>h1{
+    margin-top:20%;
+}
+.intro-text>div{
+    margin-top: 5%;
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 16px;
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-120%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.second{
+    margin-top: 10%;
+}
+.second>div>h1{
+    margin-top: 70%;
+}
+.third{
+    margin-top: 12%;
+}
+.forth{
+    margin-top: 12%;
+}
+.second>.intro-img{
+    animation: slideInRight 1s ease-in-out both;
+}
+.second>.intro-text{
+    animation: slideInLeft 1s ease-in-out both;
+}
+.third>.intro-img{
+    animation: slideInLeft 1s ease-in-out both;
+}
+.third>.intro-text{
+    animation: slideInRight 1s ease-in-out both;
+}
+.forth>.intro-img{
+    animation: slideInRight 1s ease-in-out both;
+}
+.forth>.intro-text{
+    animation: slideInLeft 1s ease-in-out both;
+}

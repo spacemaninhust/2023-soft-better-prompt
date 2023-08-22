@@ -1,0 +1,12 @@
+.menu-item-names{
+    position: relative;
+    bottom: -36px;
+    width: 100%;
+    height: 278px;
+    transition: 0.5s;
+    opacity: .8;
+}
+.menu-item:hover .menu-item-names{
+    bottom: 24px;
+    background-color: #d30dd6;
+}
